@@ -104,3 +104,12 @@
             padding: 0;
             margin: 0;
         }
+       
+
+        @media (width < 1024px){
+           .nav-bar-menu{
+                display: none;
+                /* display: block; */
+
+            }
+        }

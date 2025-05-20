@@ -10,19 +10,32 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Navigation Menu -->
-    <nav class="bg-blue-700 bg-opacity-90 text-white py-4 sticky top-0 z-50">
+    <nav class="bg-blue-700 bg-opacity-90 text-white py-4 fixed top-0 inset-x-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
             <a href="#">
                 <img src="images/logo.png" alt="Brainpals Code Academy Logo" class="h-12 w-auto object-contain hover-bounce">
             </a>
-            <div class="space-x-4">
-                <a href="#about" class="hover:text-yellow-300 hover:underline transition-all duration-300">About</a>
-                <a href="#program" class="hover:text-yellow-300 hover:underline transition-all duration-300">Program</a>
-                <a href="#guests" class="hover:text-yellow-300 hover:underline transition-all duration-300">Guests</a>
-                <a href="#graduands" class="hover:text-yellow-300 hover:underline transition-all duration-300">Graduands</a>
-                <a href="#gallery" class="hover:text-yellow-300 hover:underline transition-all duration-300">Gallery</a>
-                <a href="#videos" class="hover:text-yellow-300 hover:underline transition-all duration-300">Videos</a>
-                <a href="#register" class="hover:text-yellow-300 hover:underline transition-all duration-300">Register</a>
+            <div class="flex">
+                <img class=" menu-icon block md:hidden" src="images/menu.svg" alt="">
+                <ul class="md:flex space-x-4 nav-bar-menu hidden [&_li]:mt-10 [&_li]:md:mt-2">
+                    <img class=" close-icon  block md:hidden ml-[auto]" src="images/close.svg" alt="">
+                    <li class="mt-2"> <a href="#about" class="hover:text-yellow-300 hover:underline transition-all duration-300">About</a></li>
+                    <li class="mt-2"> <a href="#program" class="hover:text-yellow-300 hover:underline transition-all duration-300">Program</a></li>
+                    <li class="mt-2"> <a href="#guests" class="hover:text-yellow-300 hover:underline transition-all duration-300">Guests</a></li>
+                    <li class="mt-2"><a href="#graduands" class="hover:text-yellow-300 hover:underline transition-all duration-300">Graduands</a></li>
+                    <li class="mt-2"> <a href="#gallery" class="hover:text-yellow-300 hover:underline transition-all duration-300">Gallery</a></li>
+                    <li class="mt-2"> <a href="#videos" class="hover:text-yellow-300 hover:underline transition-all duration-300">Videos</a></li>
+                    <li class="mt-2"> <a href="#register" class="hover:text-yellow-300 hover:underline transition-all duration-300">Register</a></li>
+
+
+                </ul>
+               
+               
+               
+                
+               
+               
+               
             </div>
         </div>
     </nav>
@@ -314,5 +327,6 @@
     <!-- JavaScript for View More Button, Image Modal, and Hero Slider -->
    
     <script src="js/script.js"></script>
+    <script src="js/nav-event.js"></script>
 </body>
 </html>
