@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brainpals Code Academy Graduation Ceremony</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <!-- <link href="assets/img/logo.png" rel="icon"> -->
     <link rel="stylesheet" href="css/style.css" />
@@ -155,90 +156,120 @@
     </section>
 
     <!-- Program of the Event Section -->
-    <section id="program" class="container mx-auto py-12">
-      <h2 class="text-3xl font-bold text-center mb-8">Program of the Event</h2>
-      <div class="max-w-3xl mx-auto">
-        <div class="relative border-l-4 border-blue-600 pl-6">
-          <!-- Event Overview -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.1s">
-            <h3 class="text-xl font-semibold">Time: 10:00 AM</h3>
-            <p class="text-gray-600">Venue: Main Campus</p>
-          </div>
+      <section id="program" class="container mx-auto py-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Program of the Event</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative border-l-4 border-blue-600 pl-6">
+                    <!-- Event Overview -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.1s">
+                        <h3 class="text-xl font-semibold">Time: 10:00 AM</h3>
+                        <p class="text-gray-600">Venue: Main Campus</p>
+                    </div>
 
-          <!-- Event 1 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.2s">
-            <h3 class="text-xl font-semibold">Opening Prayer</h3>
-            <p class="text-gray-600">
-              Commencing the ceremony with an opening prayer.
-            </p>
-          </div>
+                    <!-- Event 1 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.2s">
+                        <h3 class="text-xl font-semibold">Opening Prayer</h3>
+                        <p class="text-gray-600">Commencing the ceremony with an opening prayer.</p>
+                    </div>
 
-          <!-- Event 2 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.3s">
-            <h3 class="text-xl font-semibold">National Anthem</h3>
-            <p class="text-gray-600">Rendition of the national anthem.</p>
-          </div>
+                    <!-- Event 2 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.3s">
+                        <h3 class="text-xl font-semibold">National Anthem</h3>
+                        <p class="text-gray-600">Rendition of the national anthem.</p>
+                    </div>
 
-          <!-- Event 3 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.4s">
-            <h3 class="text-xl font-semibold">
-              Recognition of Guests & Graduands
-            </h3>
-            <p class="text-gray-600">
-              Acknowledging the presence of esteemed guests and graduands.
-            </p>
-          </div>
+                    <!-- Event 3 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.4s">
+                        <h3 class="text-xl font-semibold">Recognition of Guests & Graduands</h3>
+                        <p class="text-gray-600">Acknowledging the presence of esteemed guests and graduands.</p>
+                    </div>
 
-          <!-- Event 4 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.5s">
-            <h3 class="text-xl font-semibold">Welcoming Address</h3>
-            <p class="text-gray-600">Delivered by a student representative.</p>
-          </div>
+                    <!-- Event 4 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.5s">
+                        <h3 class="text-xl font-semibold">Chairman Opening Speech</h3>
+                        <p class="text-gray-600">Opening remarks by the event chairman.</p>
+                    </div>
 
-          <!-- Event 5 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.6s">
-            <h3 class="text-xl font-semibold">Brief Speech about Brainpals</h3>
-            <p class="text-gray-600">
-              Overview of Brainpals' vision and mission.
-            </p>
-          </div>
+                    <!-- Event 5 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.6s">
+                        <h3 class="text-xl font-semibold">Welcoming Address</h3>
+                        <p class="text-gray-600">Delivered by a graduand representative.</p>
+                    </div>
 
-          <!-- Event 6 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.7s">
-            <h3 class="text-xl font-semibold">Skill Presentation</h3>
-            <p class="text-gray-600">
-              Demonstrations by students showcasing their technical skills.
-            </p>
-          </div>
+                    <!-- Event 6 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.7s">
+                        <h3 class="text-xl font-semibold">Brief Speech about Brainpals</h3>
+                        <p class="text-gray-600">Overview of Brainpals' vision and mission.</p>
+                    </div>
 
-          <!-- Event 7 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.8s">
-            <h3 class="text-xl font-semibold">Guest Speaker</h3>
-            <p class="text-gray-600">
-              Topic: <em>Equipped, Empowered, and Emerging</em>.
-            </p>
-          </div>
+                    <!-- Event 7 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.8s">
+                        <h3 class="text-xl font-semibold">KTECC Presentation</h3>
+                        <p class="text-gray-600">Presentation showcasing KTECC initiatives and achievements.</p>
+                    </div>
 
-          <!-- Event 8 -->
-          <div class="mb-8 animate-scale-up" style="animation-delay: 0.9s">
-            <h3 class="text-xl font-semibold">Certificate Distribution</h3>
-            <p class="text-gray-600">
-              Presentation of certificates to graduating students.
-            </p>
-          </div>
+                    <!-- Event 8 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 0.9s">
+                        <h3 class="text-xl font-semibold">Speaker: Equipped, Empowered, and Emerging</h3>
+                        <p class="text-gray-600">Keynote address by the SSA on Digital Economy.</p>
+                    </div>
 
-          <!-- Event 9 -->
-          <div class="animate-scale-up" style="animation-delay: 1s">
-            <h3 class="text-xl font-semibold">
-              Closing Remarks / Group Picture
-            </h3>
-            <p class="text-gray-600">
-              Final thoughts and a memorable group photo session.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <!-- Event 9 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.0s">
+                        <h3 class="text-xl font-semibold">Graduands Presentation</h3>
+                        <p class="text-gray-600">Showcase of projects and skills by graduating students.</p>
+                    </div>
+
+                    <!-- Event 10 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.1s">
+                        <h3 class="text-xl font-semibold">KHOT</h3>
+                        <p class="text-gray-600">Special segment featuring KHOT activities.</p>
+                    </div>
+
+                    <!-- Event 11 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.2s">
+                        <h3 class="text-xl font-semibold">KTECC Presentation</h3>
+                        <p class="text-gray-600">Second presentation highlighting additional KTECC contributions.</p>
+                    </div>
+
+                    <!-- Event 12 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.3s">
+                        <h3 class="text-xl font-semibold">SpringBoard Speech</h3>
+                        <p class="text-gray-600">Address by the Commissioner on Agric and Food Security.</p>
+                    </div>
+
+                    <!-- Event 13 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.4s">
+                        <h3 class="text-xl font-semibold">Question and Discussion</h3>
+                        <p class="text-gray-600">Interactive session for audience questions and discussions.</p>
+                    </div>
+
+                    <!-- Event 14 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.5s">
+                        <h3 class="text-xl font-semibold">Certificate Distribution</h3>
+                        <p class="text-gray-600">Presentation of certificates to graduating students.</p>
+                    </div>
+
+                    <!-- Event 15 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.6s">
+                        <h3 class="text-xl font-semibold">Excellency Award</h3>
+                        <p class="text-gray-600">Recognition of outstanding graduands with the Excellency Award.</p>
+                    </div>
+
+                    <!-- Event 16 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.7s">
+                        <h3 class="text-xl font-semibold">Light Refreshment</h3>
+                        <p class="text-gray-600">Break for light refreshments and networking.</p>
+                    </div>
+
+                    <!-- Event 17 -->
+                    <div class="mb-8 animate-scale-up" style="animation-delay: 1.8s">
+                        <h3 class="text-xl font-semibold">Closing Remarks & Group Picture</h3>
+                        <p class="text-gray-600">Final thoughts followed by a memorable group photo session.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Invited Guests Section -->
     <section id="guests" class="container mx-auto py-12">
@@ -250,13 +281,13 @@
           style="animation-delay: 0.2s"
         >
           <img
-            src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
+            src="photos/chief_guest_speaker_hon_Timothy_ojoma.jpg"
             alt="Guest 1"
             class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
           />
-          <h3 class="text-xl font-semibold">Dr. Aisha Bello</h3>
-          <p class="text-gray-600">CEO, TechInnovate</p>
-          <p class="text-gray-600">Keynote Speaker</p>
+          <h3 class="text-xl font-semibold">Hon. Timothy Ojoma</h3>
+          <p class="text-gray-600 py-2 "><strong>Commissioner of Agriculture and Food Security</strong></p>
+          <p class="text-gray-600">Chief Guest Speaker and Special Guest of Honor</p>
         </div>
         <!-- Guest 2 -->
         <div
@@ -264,13 +295,13 @@
           style="animation-delay: 0.4s"
         >
           <img
-            src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+            src="photos/hon_remi_jones.jpg"
             alt="Guest 2"
             class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
           />
-          <h3 class="text-xl font-semibold">Prof. Emeka Nwosu</h3>
-          <p class="text-gray-600">Dean, Faculty of Computing</p>
-          <p class="text-gray-600">Award Presenter</p>
+          <h3 class="text-xl font-semibold">Hon. Wemi Ojo Joens (FCIB)</h3>
+          <p class="text-gray-600"><strong>Commissioner of Education</strong></p>
+          <p class="text-gray-600">Guest of Honor</p>
         </div>
         <!-- Guest 3 -->
         <div
@@ -278,12 +309,27 @@
           style="animation-delay: 0.6s"
         >
           <img
-            src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg"
+            src="photos/mr_femi_osunghohun.jpg"
             alt="Guest 3"
             class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
           />
-          <h3 class="text-xl font-semibold">Ms. Funmi Adeyemi</h3>
-          <p class="text-gray-600">Director, CyberSecure Ltd.</p>
+          <h3 class="text-xl font-semibold">Mr. Femi Osungbohun</h3>
+          <p class="text-gray-600"><strong>NYSC State Co-ordinator </strong></p>
+          <p class="text-gray-600">Guest of Honor</p>
+        </div>
+
+        <!-- Guest 4 -->
+          <div
+          class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
+          style="animation-delay: 0.6s"
+        >
+          <img
+            src="photos/Hon_Nana_Hauwa_Kazeem.jpg"
+            alt="Guest 3"
+            class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
+          />
+          <h3 class="text-xl font-semibold">Hon. Nana Hauwa Kazeem</h3>
+          <p class="text-gray-600"><strong>Senior Special Adviser on Education</strong></p>
           <p class="text-gray-600">Guest of Honor</p>
         </div>
       </div>
@@ -412,6 +458,34 @@
             <p class="text-gray-600">Matric No: 24FWEB025</p>
             <p class="text-gray-600">Program: Web dev with PHP</p>
           </div>
+
+           <div
+            class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
+            style="animation-delay: 0.8s"
+          >
+            <img
+              src="./photos/24UXU1008.jpg"
+              alt="Graduand 6"
+              class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
+            />
+            <h3 class="text-xl font-semibold">Sean Ojochide </h3>
+            <p class="text-gray-600">Matric No: 24FWEB036</p>
+            <p class="text-gray-600">Program: Web development with PHP</p>
+          </div>
+
+           <div
+            class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
+            style="animation-delay: 0.8s"
+          >
+            <img
+              src="./photos/24FWEB038.jpg"
+              alt="Graduand 6"
+              class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
+            />
+            <h3 class="text-xl font-semibold">Ajibade Taiwo Ayomide</h3>
+            <p class="text-gray-600">Matric No: 24FWEB038</p>
+            <p class="text-gray-600">Program: Web dev with PHP</p>
+          </div>
         </div>
       </div>
 
@@ -490,7 +564,7 @@
             />
             <h3 class="text-xl font-semibold">Akerele Oluwasemilore Joshua</h3>
             <p class="text-gray-600">Matric No: 25ADUX003</p>
-            <p class="text-gray-600">School: Advanced UIUX</p>
+            <p class="text-gray-600">School: Advanced UI/UX</p>
           </div>
           <div
             class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
@@ -503,10 +577,133 @@
             />
             <h3 class="text-xl font-semibold">Enyo Shaibu</h3>
             <p class="text-gray-600">Matric No: 25UXUI002</p>
-            <p class="text-gray-600">School: UIUX</p>
+            <p class="text-gray-600">School: UI/UX</p>
+          </div>
+
+           <div
+            class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
+            style="animation-delay: 0.8s"
+          >
+            <img
+              src="./photos/24UXU1008.jpg"
+              alt="Graduand 6"
+              class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
+            />
+            <h3 class="text-xl font-semibold">Sean Ojochide </h3>
+            <p class="text-gray-600">Matric No: 24UXUI008</p>
+            <p class="text-gray-600">Program: UI/UX </p>
+          </div>
+
+           <div
+            class="bg-white rounded-lg shadow-lg p-6 text-center hover-bounce animate-scale-up"
+            style="animation-delay: 0.8s"
+          >
+            <img
+              src="./photos/24FWEB038.jpg"
+              alt="Graduand 6"
+              class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition-transform duration-300"
+            />
+            <h3 class="text-xl font-semibold">Ajibade Taiwo Ayomide</h3>
+            <p class="text-gray-600">Matric No: 24JGRA003</p>
+            <p class="text-gray-600">Program: Graphics design</p>
           </div>
         </div>
       </div>
+    </section>
+
+     <section id="statistics" class="container mx-auto py-12 px-4">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Batch 36 & 37 Student Statistics</h1>
+
+        <!-- Batch Admission Statistics -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <!-- Batch 36 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Batch 36 Admissions</h2>
+                <div class="space-y-4">
+                    <p class="text-lg"><span class="font-medium">Total Students:</span> 47</p>
+                    <p class="text-lg"><span class="font-medium">Male Students:</span> 26</p>
+                    <p class="text-lg"><span class="font-medium">Female Students:</span> 21</p>
+                </div>
+            </div>
+            <!-- Batch 37 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Batch 37 Admissions</h2>
+                <div class="space-y-4">
+                    <p class="text-lg"><span class="font-medium">Total Students:</span> 30</p>
+                    <p class="text-lg"><span class="font-medium">Male Students:</span> 15</p>
+                    <p class="text-lg"><span class="font-medium">Female Students:</span> 15</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graduation Statistics -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-12">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Graduation Statistics</h2>
+            <p class="text-lg mb-4"><span class="font-medium">Total Graduates:</span> 25</p>
+            
+            <!-- By Course -->
+            <h3 class="text-xl font-semibold text-gray-600 mb-3">Graduates by Course</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Data Analysis:</p>
+                    <p>4 Students (Male: 1, Female: 3)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">UI/UX:</p>
+                    <p>5 Students (Male: 3, Female: 2)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Advanced UI/UX:</p>
+                    <p>3 Students (Male: 2, Female: 1)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Web Dev with PHP:</p>
+                    <p>5 Students (Male: 4, Female: 1)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Beg., Frontend Dev:</p>
+                    <p>1 Student (Male: 1)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Graphics Design:</p>
+                    <p>1 Student (Male: 1)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Python Programming:</p>
+                    <p>1 Student (Male: 1)</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="font-medium">Business Intelligence:</p>
+                    <p>1 Student (Female: 1)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6">Visual Statistics</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Pie Charts for Admissions -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-600 mb-4">Admissions by Gender</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-600 mb-2">Batch 36</h4>
+                            <canvas id="batch36PieChart"></canvas>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-600 mb-2">Batch 37</h4>
+                            <canvas id="batch37PieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bar Chart for Graduates -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-600 mb-4">Graduates by Course and Gender</h3>
+                    <canvas id="graduatesBarChart"></canvas>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Gallery Section -->
@@ -770,5 +967,6 @@
 
     <script src="js/script.js"></script>
     <script src="js/nav-event.js"></script>
+    <script src="js/chart.js"></script>
   </body>
 </html>
